@@ -13,6 +13,12 @@ h1 {
   font-family: Lato, sans-serif;
 }
 
+h2 {
+  font-family: Lato, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+
 h3 {
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -26,6 +32,34 @@ h4 {
   font-weight: 300;
   font-size: 24px;
   letter-spacing: 2px;
+}
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 1.4em 2.75em;
+  margin-top: 2em;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.freepik {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+.freepik a {
+  color: white;
+  text-decoration: underline;
 }
 
 header #fixedBar {
@@ -89,25 +123,127 @@ header section img {
   width: 16%;
   height: auto;
 }
-header section a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: white;
-  border: 2px solid white;
-  border-radius: 30px;
-  padding: 1.4em 2.75em;
-  margin-top: 2em;
-}
-header section a:hover {
-  color: black;
-  background-color: white;
-}
 
-main section {
+main {
   background-color: #292B33;
-  height: 100em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #firstMainCards {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-30%);
+  gap: 1em;
+}
+main #firstMainCards article {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 2em 0;
+  border-radius: 35px;
+}
+main #firstMainCards article i {
+  color: #4B4F5F;
+  font-size: 4em;
+}
+main #firstMainCards article h4 {
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  width: 70%;
+}
+main #firstMainCards article p {
+  text-align: center;
+  width: 70%;
+  line-height: 1.6;
+}
+main #circle {
+  width: 60%;
+  height: 600px;
+  padding: 5em 0;
+  margin: 5em 0;
+  position: relative;
+}
+main #circle #forest {
+  background-image: url(../images/paysage1.jpg);
+  background-size: cover;
+  width: 276px;
+  height: 276px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 50px;
+}
+main #circle #orange {
+  width: 75px;
+  height: 75px;
+  border: #F58D54 solid 25px;
+  position: absolute;
+  top: 325px;
+  left: 0;
+  border-radius: 50%;
+}
+main #circle #snowMountain {
+  background-image: url(../images/paysage3.jpg);
+  background-size: cover;
+  width: 389px;
+  height: 389px;
+  border-radius: 50%;
+  position: absolute;
+  border: white solid 20px;
+  bottom: 0;
+  left: 150px;
+  z-index: 99;
+}
+main #circle #mountain {
+  background-image: url(../images/paysage2.jpg);
+  background-size: cover;
+  width: 628px;
+  height: 628px;
+  border-radius: 50%;
+  position: absolute;
+  border: white solid 10px;
+  top: 0;
+  right: 50px;
+}
+main #circle #blueGray {
+  border: #6C738A solid 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+main #backpack {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  text-align: center;
+  width: 70%;
+  padding: 1em 2em;
+}
+main #backpack #backpackText {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  width: 75%;
+}
+main #backpack .btn {
+  background-color: #F58D54;
+  border: 0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+main #backpack .btn:hover {
+  background-color: #6C738A;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

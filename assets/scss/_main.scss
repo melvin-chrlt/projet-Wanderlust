@@ -1,7 +1,131 @@
 main{
+    background-color: #292B33;
+    @include flex;
 
-    section{
-        background-color: #292B33;
-        height: 100em;
+    #firstMainCards{
+        display: flex;
+        justify-content: center;
+        transform: translateY(-30%);
+        gap: 1em;
+           
+        article{
+            background-color: white;
+            @include flex;
+            gap: 1em;
+            padding: 2em 0;
+            border-radius: 35px;
+
+            i{
+                color: #4B4F5F;
+                font-size: 4em;
+            }
+
+            h4{
+                text-align: center;
+                font-family: Lato, sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                width: 70%;
+            }
+
+            p{
+                text-align: center;
+                width: 70%;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    #circle{
+        width: 60%;
+        height: 600px;
+        padding: 5em 0;
+        margin: 5em 0;
+        position: relative;
+
+        #forest{
+            background-image: url(../images/paysage1.jpg);
+            background-size: cover;
+            width: 276px;
+            height: 276px;
+            border-radius: 50%;
+            position: absolute;
+            top: 25px;
+            left: 50px;
+        }
+
+        #orange{
+            width: 75px;
+            height: 75px;
+            border: #F58D54 solid 25px;
+            position: absolute;
+            top: 325px;
+            left: 0;
+            border-radius: 50%;
+        }
+
+        #snowMountain{
+            background-image: url(../images/paysage3.jpg);
+            background-size: cover;
+            width: 389px;
+            height: 389px;
+            border-radius: 50%;
+            position: absolute;
+            border: white solid 20px;
+            bottom: 0;
+            left: 150px;
+            z-index: 99;
+        }
+
+        #mountain{
+            background-image: url(../images/paysage2.jpg);
+            background-size: cover;
+            width: 628px;
+            height: 628px;
+            border-radius: 50%;
+            position: absolute;
+            border: white solid 10px;
+            top: 0;
+            right: 50px;
+        }
+
+        #blueGray{
+            border: #6C738A solid 50px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+        }
+    }
+
+    #backpack{
+        color: white;
+        @include flex;
+        gap: 1.5em;
+        text-align: center;
+        width: 70%;
+        padding: 1em 2em;
+
+        #backpackText{
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            width: 75%;
+        }
+
+        .btn{
+            background-color: #F58D54;
+            border: 0;
+            font-size: 16px;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+
+        .btn:hover{
+            background-color: #6C738A;
+            color: white;
+        }
+        
     }
 }
